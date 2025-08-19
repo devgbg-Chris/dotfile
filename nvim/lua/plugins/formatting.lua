@@ -19,13 +19,5 @@ return {
         handlebars = { "prettier" },
       },
     },
-    {
-      "LazyVim/LazyVim",
-      opts = {
-        defaults = {
-          autocmds = true,
-        },
-      },
-    },
   },
 }

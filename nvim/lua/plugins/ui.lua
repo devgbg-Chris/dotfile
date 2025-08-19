@@ -11,6 +11,16 @@ return {
     "snacks.nvim",
     opts = {
       scroll = { enabled = false },
+      picker = {
+        exclude = {
+          ".git",
+          "target",
+          "node_module",
+          "dist",
+        },
+        hidden = true,
+        ignored = true,
+      },
     },
     keys = {},
   },

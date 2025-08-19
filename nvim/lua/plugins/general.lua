@@ -4,9 +4,6 @@ return {
     defaults = {
       file_ignore_patterns = {
         "target/",
-        "%.lock",
-        "node_modules/",
-        "%.git/",
       },
     },
   },
