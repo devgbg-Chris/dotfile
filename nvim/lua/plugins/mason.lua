@@ -1,18 +1,17 @@
 return {
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
+        -- Language servers
         "rust-analyzer",
-      },
-    },
-  },
+        "typescript-language-server",
 
-  {
-    "williamboman/mason-lspconfig.nvim",
-    opts = {
-      ensure_installed = {
-        "rust_analyzer",
+        -- Formatters
+        "prettier",
+
+        -- Debuggers
+        "codelldb",
       },
     },
   },

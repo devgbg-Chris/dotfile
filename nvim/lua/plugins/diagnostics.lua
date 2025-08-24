@@ -4,10 +4,7 @@ return {
     event = "VeryLazy",
     priority = 1000,
     config = function()
-      require("tiny-inline-diagnostic").setup({
-        preset = "powerline",
-      })
-      vim.diagnostic.config({ virtual_text = false })
+      require("tiny-inline-diagnostic").setup()
     end,
   },
   {
@@ -15,12 +12,6 @@ return {
     dependencies = {
       { "nvim-lua/plenary.nvim" },
       { "nvim-telescope/telescope.nvim" },
-      {
-        "folke/snacks.nvim",
-        opts = {
-          terminal = {},
-        },
-      },
     },
     event = "LspAttach",
     opts = {},

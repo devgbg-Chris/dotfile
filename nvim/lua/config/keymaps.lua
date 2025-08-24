@@ -17,9 +17,7 @@ keymap.set("t", "<C-/>", function()
   vim.cmd("startinsert")
 end, { desc = "Terminal vertical split" })
 
-keymap.set({ "n", "x" }, "ta", function()
-  require("tiny-code-action").code_action({})
-end, { noremap = true, silent = true, desc = "tinyCodeAction" })
+keymap.set("t", "<C-o>", "<C-\\><C-n>", { desc = "Terminal to normal mode" })
 
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
